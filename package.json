@@ -15,10 +15,14 @@
     "jade": "^1.11.0",
     "style-loader": "^0.12.3",
     "stylus-loader": "^1.2.0",
+    "sass-loader": "^2.0.1",
     "template-html-loader": "0.0.3",
     "vue-loader": "^3.0.3",
     "webpack": "^1.9.11",
     "extract-text-webpack-plugin": "^0.8.2"
+  },
+  "peerDependencies": {
+    "node-sass": "^3.0.2"
   },
   "scripts": {
     "dev": "webpack --watch"

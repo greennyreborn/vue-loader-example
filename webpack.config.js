@@ -16,7 +16,8 @@ module.exports = {
           // inside *.vue files.
           js: 'babel?optional[]=runtime',
           css: ExtractTextPlugin.extract("css"),
-          stylus: ExtractTextPlugin.extract("css!stylus")
+          stylus: ExtractTextPlugin.extract("css!stylus"),
+          scss: ExtractTextPlugin.extract("css!sass")
         })
       }
     ]

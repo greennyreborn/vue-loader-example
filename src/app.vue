@@ -1,9 +1,9 @@
-<style lang="stylus">
-font-stack = Helvetica, sans-serif
-primary-color = #999
-body
-  font 100% font-stack
-  color primary-color
+<style lang="scss">
+  $font-stack: Helvetica, sans-serif;
+  body {
+    font: 100% $font-stack;
+    color: #999;
+  }
 </style>
 
 <template lang="jade">
