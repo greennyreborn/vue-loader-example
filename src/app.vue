@@ -13,7 +13,7 @@ div
   comp-b
 </template>
 
-<script>
+<script lang="babel">
 import compA from './components/a.vue'
 import compB from './components/b.vue'
 

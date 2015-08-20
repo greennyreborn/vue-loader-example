@@ -1,4 +1,5 @@
-var vue = require('vue-loader')
+var vue = require('vue-loader');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js",
@@ -13,10 +14,15 @@ module.exports = {
         loader: vue.withLoaders({
           // apply babel transform to all javascript
           // inside *.vue files.
-          js: 'babel?optional[]=runtime'
+          js: 'babel?optional[]=runtime',
+          css: ExtractTextPlugin.extract("css"),
+          stylus: ExtractTextPlugin.extract("css!stylus")
         })
       }
     ]
   },
-  devtool: 'source-map'
-}
+  devtool: 'source-map',
+  plugins: [
+    new ExtractTextPlugin("css/[name].css")
+  ]
+};
